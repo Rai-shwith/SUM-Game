@@ -1,0 +1,28 @@
+import random
+print("WELCOME")
+
+def rgt(n):
+    return random.randint(0,n)
+    
+def main():
+    num1=100
+    num2=100
+    a=rgt(num1)
+    b=rgt(num2)
+    result=a+b
+    
+    p=int(input(str(a)+'+'+str(b)+'='))
+    if p==result:
+        print('CORRECT!!')
+        return True
+    else:
+        print('wrong')
+        return False
+k=0 
+l=5
+for i in range (l) :
+    if main():
+        k+=1
+    
+print('You Scored '+str(k)+'/'+str(l))    
+        
